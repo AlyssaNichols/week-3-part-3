@@ -23,12 +23,24 @@ console.log(supplyChanges);
 console.log('5. Adding 25 to supplyChanges.');
 supplyChanges.push(25);
 console.log(supplyChanges);
+
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
 //    - if it is a positive number (greater than 0), log 'Added x parts.' 
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
+
+for (let x = 0; x < supplyChanges.length; x++){
+    console.log(supplyChanges[x]);
+    if (supplyChanges[x] > 0){
+    console.log('added x parts');
+}   else if (supplyChanges[x] === 0){
+    console.log('No Change');
+}   else {
+    console.log ('Removed x parts');
+}
+}
 
 
 // STRETCH GOALS
