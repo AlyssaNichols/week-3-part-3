@@ -41,7 +41,7 @@ if (x > 0){
 } else {console.log('Removed', x, 'parts')
 }
 }
-
+ console.log(supplyChanges);
 
 
 
@@ -53,12 +53,12 @@ console.log('7. Showing supplyChanges with "for of" loop');
 
 for (parts of supplyChanges){
     console.log(parts);
-    if (x > 0){
-        console.log('added', x, 'parts');
-    }   else if (x === 0){
+    if (parts > 0){
+        console.log('added x parts');
+    }   else if (parts === 0){
         console.log('No Change');
     }   else {
-        console.log ('Removed', x, 'parts');
+        console.log ('Removed x parts');
     }
 
 }
